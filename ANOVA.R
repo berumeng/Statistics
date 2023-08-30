@@ -26,7 +26,7 @@ summary(Anova1)
 par(mfrow=c(1,2))
 plot(Anova1, which=1:2)
 
-#Prueba de Tukey
+#Prueba de Tukey usando base R
 TukeyHSD(Anova1)
 #Gráfica prueba de medias tukey
 plot(TukeyHSD(Anova1))
