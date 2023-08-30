@@ -71,21 +71,21 @@ interaction.plot(x.factor = problema5.1$PRESION, trace.factor = problema5.1$TEMP
 # Calcular medias por cada combinación de tratamiento
 problema5.1_stats <- 
   problema5.1 %>% 
-  group_by(PRESION, TEMPERATURA) %>% # <- remember to group by the two factors
+  group_by(PRESION, TEMPERATURA) %>% # <- agrupar por los dos factores
   summarise(Means = mean(RENDIMIENTO), SEs = sd(RENDIMIENTO)/sqrt(n()))
 problema5.1_stats
 
-# Plot these as an interaction plot
+# Graficar como interacción
 ggplot(problema5.1_stats, 
        aes(x = PRESION, y = Means, colour = TEMPERATURA,
            ymin = Means - SEs, ymax = Means + SEs)) +
-  # this adds the mean
+  # Esto añade la media
   geom_point(size = 3) +
   # this adds the error bars
   geom_errorbar(width = 0.1) +
-  # controlling the appearance
+  # Apariencia
   #scale_y_continuous(limits = c(2, 7)) + 
   xlab("PRESION") + ylab("RENDIMIENTOFC") + 
-  # use a more professional theme
+  # Usar otro tema
   theme_bw()
 
