@@ -1,7 +1,7 @@
 # Statistics
 Diseño de experimentos
 
-Diseño al azar
+Diseño completamente al azar
 
 Diseño de bloques
 
