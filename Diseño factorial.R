@@ -1,5 +1,5 @@
-#Hacer gráficas de expresión
-setwd("/Users/berumen/Desktop/Estadistica_MIAP/")
+#Cargar datos
+setwd("/Rutas/de/trabajo/")
 
 #Cargar librería
 library(readxl)
@@ -68,7 +68,7 @@ interaction.plot(x.factor = problema5.1$PRESION, trace.factor = problema5.1$TEMP
 #PRESION a 215 y temperatura a 170ºC da el mejor rendimiento
 
 
-# Calcular means for each treatment combination
+# Calcular medias por cada combinación de tratamiento
 problema5.1_stats <- 
   problema5.1 %>% 
   group_by(PRESION, TEMPERATURA) %>% # <- remember to group by the two factors
