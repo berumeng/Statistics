@@ -52,17 +52,3 @@ interaction.plot(x.factor = Fenoles_bien$Dia, trace.factor = Fenoles_bien$Tratam
 
 
 
-###################    OTRA FORMA /OMITIR PARA EJERCICIO   ################
-#MODELO D
-model <- lm(Fenoles_bien$Fenoles~Fenoles_bien$Dia+Fenoles_bien$Tratamiento)
-
-#ANOVA
-anova<-anova(model)
-anova
-
-#LSD TEST
-library(agricolae)
-LSD <- LSD.test(anova3, "Dia")
-LSD
-
-
