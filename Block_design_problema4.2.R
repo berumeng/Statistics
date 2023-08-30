@@ -1,5 +1,5 @@
 #Establecer ruta de trabajo siempre
-setwd("/Users/berumen/Desktop/UAN/Clases/Posgrado/MIAP/Estadistica_MIAP/")
+setwd("/Ruta/de/trabajo/")
 
 #Cargar librería
 library(readxl)
