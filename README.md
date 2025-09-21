@@ -7,4 +7,4 @@ Diseño de bloques
 
 Diseño factorial
 
-Estadística descriptiva (media, mediana, histograma de frecuencias, valores máximos y mínimos)
+Estadística descriptiva (media, mediana, desviación estándar, histograma de frecuencias, valores máximos y mínimos)
